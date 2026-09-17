@@ -49,8 +49,9 @@ def run_single_challenge(cid: str, title: str, code_path: Path, test_path: Path,
         ]
 
         env = {
-            "PYTHONPATH": str(code_path.parent.resolve())
-        }
+            **subprocess.os.environ,
+            "PYTHONPATH": str(code_path.parent.resolve()),
+}
 
         start_time = time.time()
         try:
@@ -59,7 +60,7 @@ def run_single_challenge(cid: str, title: str, code_path: Path, test_path: Path,
                 cwd=tmpdir,
                 capture_output=True,
                 text=True,
-                env={**env, "PATH": subprocess.os.environ.get("PATH", "")},
+                env=env,
                 timeout=timeout
             )
             duration = time.time() - start_time

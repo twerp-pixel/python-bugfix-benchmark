@@ -24,10 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Pytest Suite Directly
-        run: |
-          pytest tests/ -v
-
       - name: Execute Automated Grading Harness
         run: |
           python -m harness.runner --mode fixed --json-out benchmark_results.json --signoff-out REVIEWER_SIGNOFF.md
