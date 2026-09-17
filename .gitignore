@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest & coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Harness generated reports
+benchmark_results.json
+REVIEWER_SIGNOFF.md
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp

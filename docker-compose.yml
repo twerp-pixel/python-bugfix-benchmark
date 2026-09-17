@@ -1,0 +1,8 @@
+services:
+  benchmark-evaluator:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/workspace
+    command: python -m harness.runner --mode fixed
