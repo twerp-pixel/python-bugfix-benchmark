@@ -1,6 +1,5 @@
 # Python Bug-Fix Benchmark & Automated Grading Harness
 
-# [![Benchmark CI](https://github.com/your-username/python-bugfix-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/python-bugfix-benchmark)
 [![Benchmark CI](https://github.com/twerp-pixel/python-bugfix-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/twerp-pixel/python-bugfix-benchmark/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![Docker Ready](https://img.shields.io/badge/docker-ready-2496ED.svg)](https://www.docker.com/)
